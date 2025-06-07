@@ -1,4 +1,12 @@
 
+
+git config --global http.proxy http://127.0.0.1:7890
+git config --global https.proxy http://127.0.0.1:7890
+
+git config --global --get http.proxy
+git config --global --get https.proxy
+
+
 5. 后续管理（日常操作）
     添加新文件或修改代码后：
         添加更改：
