@@ -1,10 +1,21 @@
+1、
+git init
+git add .
 
 
-git config --global http.proxy http://127.0.0.1:7890
-git config --global https.proxy http://127.0.0.1:7890
+git config --global user.email "sunny101wy@outlook.com"
+git config --global user.name "Sunny"
 
-git config --global --get http.proxy
-git config --global --get https.proxy
+
+git commit -m "Initial commit"
+
+
+4. 设置代理
+    git config --global http.proxy http://127.0.0.1:7890
+    git config --global https.proxy http://127.0.0.1:7890
+
+    git config --global --get http.proxy
+    git config --global --get https.proxy
 
 
 5. 后续管理（日常操作）
