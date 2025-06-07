@@ -2,12 +2,23 @@
 git init
 git add .
 
-
+提交之前得设置用户名和邮箱
 git config --global user.email "sunny101wy@outlook.com"
 git config --global user.name "Sunny"
 
 
 git commit -m "Initial commit"
+
+
+2 github上创建仓库
+
+
+3 关联  将本地仓库关联到 GitHub 远程仓库：
+git remote add origin https://github.com/sunny101wy/cpp-learning.git
+验证关联是否成功
+git remote -v
+
+
 
 
 4. 设置代理
@@ -17,8 +28,15 @@ git commit -m "Initial commit"
     git config --global --get http.proxy
     git config --global --get https.proxy
 
+5，推送
+git push -u origin master
+检查默认分支：
+本地分支：运行 git branch，当前分支前会有 * 标记。
+远程分支：运行 git branch -r，会列出远程分支，如 origin/main 或 origin/master。
 
-5. 后续管理（日常操作）
+
+
+6. 后续管理（日常操作）
     添加新文件或修改代码后：
         添加更改：
         git add .
